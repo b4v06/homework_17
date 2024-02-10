@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework_17</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        'card-1': "url('../public/img/card-cover-1.jpeg')",
+                        'card-2': "url('../public/img/card-cover-2.jpeg')",
+                        'card-3': "url('../public/img/card-cover-3.jpeg')",
+                        'card-4': "url('../public/img/card-cover-4.jpeg')",
+                        'card-5': "url('../public/img/card-cover-5.jpeg')",
+                    },
+
+                    letterSpacing: {
+                        'one': '0.1px',
+                        'two': '0.2px',
+                    },
+                    spacing: {
+                        'card-height-1': '488px',
+                        'card-height-2': '300px',
+                        'card-width': '239px',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-['Montserrat']  text-[14px] font-bold">
+    <header>
+        <!-- Primary Header -->
+        <section class="h-[58px] bg-[#23856D] text-[#fff]">
+            <div class="container mx-auto">
+                <div class="h-[58px] flex justify-between items-center">
+                    <div class="flex items-center gap-[6px]">
+                        <img src="./public/svg/phone.svg" alt="Icon of Phone">
+                        <p class="text-[12px] font-normal">(225) 555-0118</p>
+                    </div>
+                    <div class="flex items-center gap-[6px]">
+                        <img src="./public/svg/mail.svg" alt="Icon of Mail">
+                        <p class="text-[12px] font-normal">michelle.rivera@example.com</p>
+                    </div>
+                    <p class="max-md:hidden">Follow Us and get a chance to win 80% off</p>
+                    <div class="flex items-center gap-[16px] max-md:gap-[8px]">
+                        <span>Follow Us :</span>
+                        <img src="./public/svg/instagram.svg" alt="Logo of Instagram">
+                        <img src="./public/svg/youtube.svg" alt="Logo of YouTube">
+                        <img src="./public/svg/facebook.svg" alt="Logo of Facebook">
+                        <img src="./public/svg/twitter.svg" alt="Logo of Twitter">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Secondary Header -->
+        <section>
+            <div class="container mx-auto">
+                <div class="h-[78px] flex justify-between items-center text-[#737373]">
+                    <span class="text-[24px] text-[#252B42]">Bandage</span>
+                    <ul class="flex justify-between gap-[16px] max-md:gap-[8px]">
+                        <li><a href="./index.html">Home</a></li>
+                        <li class="flex items-center gap-[9px]">
+                            <a href="./index.html">Shop</a>
+                            <img src="./public/svg/arrow-down.svg" alt="Arrow Down">
+                        </li>
+                        <li><a href="./index.html">About</a></li>
+                        <li><a href="./index.html">Blog</a></li>
+                        <li><a href="./index.html">Contact</a></li>
+                        <li><a href="./index.html">Pages</a></li>
+                    </ul>
+                    <div class="flex items-center text-[#23A6F0] gap-[30px] max-md:gap-[10px]">
+                        <div class="flex items-center gap-[5px]">
+                            <img src="./public/svg/login.svg" alt="Icon of Login">
+                            <a href="./index.html">Login</a>
+                            <span>/</span>
+                            <a href="./index.html">Register</a>
+                        </div>
+                        <img src="./public/svg/search.svg" alt="Icon of Search">
+                        <div class="flex items-center gap-[6px]">
+                            <img src="./public/svg/cart.svg" alt="Icon of Cart">
+                            <span>1</span>
+                        </div>
+                        <div class="flex items-center gap-[6px]">
+                            <img src="./public/svg/heart.svg" alt="Icon of Heart">
+                            <span>1</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- Section 1 - Shop -->
+        <section class="h-[363px] bg-[#FAFAFA] text-[#252B42] max-md:h-[253px]">
+            <div class="container mx-auto">
+                <div class="h-[92px] flex items-center justify-between">
+                    <span class="text-[24px] text-[#252B42]">Shop</span>
+                    <div class="flex items-center gap-[15px]">
+                        <span class="text-[#252B42]">Home</span>
+                        <img src="./public/svg/arrow-right.svg" alt="Arrow Right">
+                        <span class="text-[#BDBDBD]">Shop</span>
+                    </div>
+                </div>
+                <div class="h-[273px] flex justify-between max-md:h-[153px]">
+                    <div
+                        class="relative bg-card-1 bg-no-repeat bg-cover w-[206px] h-[223px] max-md:w-[103px] max-md:h-[112px]">
+                        <span
+                            class="absolute top-[87px] left-[70px] text-[16px] text-[#FFF] text-center tracking-one max-md:text-[14px] max-md:top-[35px] max-md:left-[20px]">CLOTHES</span>
+                        <span
+                            class="absolute top-[120px] left-[83px] font-normal text-[#FFF] text-center tracking-two max-md:top-[55px] max-md:left-[35px]">5
+                            Items</span>
+                    </div>
+                    <div
+                        class="relative bg-card-2 bg-no-repeat bg-cover w-[206px] h-[223px] max-md:w-[103px] max-md:h-[112px]">
+                        <span
+                            class="absolute top-[87px] left-[70px] text-[16px] text-[#FFF] text-center tracking-one max-md:text-[14px] max-md:top-[35px] max-md:left-[20px]">CLOTHES</span>
+                        <span
+                            class="absolute top-[120px] left-[83px] font-normal text-[#FFF] text-center tracking-two max-md:top-[55px] max-md:left-[35px]">5
+                            Items</span>
+                    </div>
+                    <div
+                        class="relative bg-card-3 bg-no-repeat bg-cover w-[206px] h-[223px] max-md:w-[103px] max-md:h-[112px]">
+                        <span
+                            class="absolute top-[87px] left-[70px] text-[16px] text-[#FFF] text-center tracking-one max-md:text-[14px] max-md:top-[35px] max-md:left-[20px]">CLOTHES</span>
+                        <span
+                            class="absolute top-[120px] left-[83px] font-normal text-[#FFF] text-center tracking-two max-md:top-[55px] max-md:left-[35px]">5
+                            Items</span>
+                    </div>
+                    <div
+                        class="relative bg-card-4 bg-no-repeat bg-cover w-[206px] h-[223px] max-md:w-[103px] max-md:h-[112px]">
+                        <span
+                            class="absolute top-[87px] left-[70px] text-[16px] text-[#FFF] text-center tracking-one max-md:text-[14px] max-md:top-[35px] max-md:left-[20px]">CLOTHES</span>
+                        <span
+                            class="absolute top-[120px] left-[83px] font-normal text-[#FFF] text-center tracking-two max-md:top-[55px] max-md:left-[35px]">5
+                            Items</span>
+                    </div>
+                    <div
+                        class="relative bg-card-5 bg-no-repeat bg-cover w-[206px] h-[223px] max-md:w-[103px] max-md:h-[112px]">
+                        <span
+                            class="absolute top-[87px] left-[70px] text-[16px] text-[#FFF] text-center tracking-one max-md:text-[14px] max-md:top-[35px] max-md:left-[20px]">CLOTHES</span>
+                        <span
+                            class="absolute top-[120px] left-[83px] font-normal text-[#FFF] text-center tracking-two max-md:top-[55px] max-md:left-[35px]">5
+                            Items</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 2 - Menu -->
+        <section class="container mx-auto">
+            <div class="flex items-center justify-between h-[98px]">
+                <span class="text-[#737373]">Showing all 12 results</span>
+                <div class="flex items-center gap-[15px]">
+                    <span class="text-[#737373]">Views:</span>
+                    <img src="./public/svg/list-1.svg" alt="Icon of List">
+                    <img src="./public/svg/list-2.svg" alt="Icon of List">
+                </div>
+                <div class="flex items-center gap-[15px]">
+                    <img src="./public/svg/button-1.svg" alt="Button">
+                    <img src="./public/svg/button-2.svg" alt="Button">
+                </div>
+            </div>
+        </section>
+        <!-- Section 3 - Products -->
+        <section class="container mx-auto">
+            <div class="h-[1682px] my-[48px] flex flex-col items-center gap-[48px] max-md:h-[3300px]">
+                <div class="grid gap-[48px] grid-cols-4 grid-rows-3 max-md:grid-cols-2 max-md:grid-rows-6">
+                    <div class="relative flex flex-col items-center gap-[15px] w-card-width h-card-height-1">
+                        <img class="absolute top-0 w-card-width h-card-height-2" src="./public/img/card-1.png"
+                            alt="Picture of the product">
+                        <span class="absolute top-[325px] text-[16px] tracking-one">Graphic Design</span>
+                        <p class="absolute top-[359px] text-[#737373]">English Department</p>
+                        <div class="absolute top-[398px] grid grid-cols-2 grid-rows-2 content-center gap-[5px]">
+                            <span class="place-self-center text-[16px] text-[#BDBDBD] tracking-one">$</span>
+                            <span class="place-self-center text-[16px] text-[#23856D] tracking-one">$</span>
+                            <span class="place-self-center text-[16px] text-[#BDBDBD] tracking-one">16.48</span>
+                            <span class="place-self-center text-[16px] text-[#23856D] tracking-one">6.48</span>
+                        </div>
+                        <div class="absolute top-[460px] flex items-center gap-[6px]">
+                            <img src="./public/svg/circle-1.svg" alt="Circle">
+                            <img src="./public/svg/circle-2.svg" alt="Circle">
+                            <img src="./public/svg/circle-3.svg" alt="Circle">
+                            <img src="./public/svg/circle-2.svg" alt="Circle">
+                        </div>
+                    </div>
+                    <div class="relative flex flex-col items-center gap-[15px] w-card-width h-card-height-1">
+                        <img class="absolute top-0 w-card-width h-card-height-2" src="./public/img/card-2.png"
+                            alt="Picture of the product">
+                        <span class="absolute top-[325px] text-[16px] tracking-one">Graphic Design</span>
+                        <p class="absolute top-[359px] text-[#737373]">English Department</p>
+                        <div class="absolute top-[398px] grid grid-cols-2 grid-rows-2 content-center gap-[5px]">
+                            <span class="place-self-center text-[16px] text-[#BDBDBD] tracking-one">$</span>
+                            <span class="place-self-center text-[16px] text-[#23856D] tracking-one">$</span>
+                            <span class="place-self-center text-[16px] text-[#BDBDBD] tracking-one">16.48</span>
+                            <span class="place-self-center text-[16px] text-[#23856D] tracking-one">6.48</span>
+                        </div>
+                        <div class="absolute top-[460px] flex items-center gap-[6px]">
+                            <img src="./public/svg/circle-1.svg" alt="Circle">
+                            <img src="./public/svg/circle-2.svg" alt="Circle">
+                            <img src="./public/svg/circle-3.svg" alt="Circle">
+                            <img src="./public/svg/circle-2.svg" alt="Circle">
+                        </div>
+                    </div>
+                    <div class="relative flex flex-col items-center gap-[15px] w-card-width h-card-height-1">
+                        <img class="absolute top-0 w-card-width h-card-height-2" src="./public/img/card-3.png"
+                            alt="Picture of the product">
+                        <span class="absolute top-[325px] text-[16px] tracking-one">Graphic Design</span>
+                        <p class="absolute top-[359px] text-[#737373]">English Department</p>
+                        <div class="absolute top-[398px] grid grid-cols-2 grid-rows-2 content-center gap-[5px]">
+                            <span class="place-self-center text-[16px] text-[#BDBDBD] tracking-one">$</span>
+                            <span class="place-self-center text-[16px] text-[#23856D] tracking-one">$</span>
+                            <span class="place-self-center text-[16px] text-[#BDBDBD] tracking-one">16.48</span>
+                            <span class="place-self-center text-[16px] text-[#23856D] tracking-one">6.48</span>
+                        </div>
+                        <div class="absolute top-[460px] flex items-center gap-[6px]">
+                            <img src="./public/svg/circle-1.svg" alt="Circle">
+                            <img src="./public/svg/circle-2.svg" alt="Circle">
+                            <img src="./public/svg/circle-3.svg" alt="Circle">
+                            <img src="./public/svg/circle-2.svg" alt="Circle">
+                        </div>
+                    </div>
+                    <div class="relative flex flex-col items-center gap-[15px] w-card-width h-card-height-1">
+                        <img class="absolute top-0 w-card-width h-card-height-2" src="./public/img/card-4.png"
+                            alt="Picture of the product">
+                        <span class="absolute top-[325px] text-[16px] tracking-one">Graphic Design</span>
+                        <p class="absolute top-[359px] text-[#737373]">English Department</p>
+                        <div class="absolute top-[398px] grid grid-cols-2 grid-rows-2 content-center gap-[5px]">
+                            <span class="place-self-center text-[16px] text-[#BDBDBD] tracking-one">$</span>
+                            <span class="place-self-center text-[16px] text-[#23856D] tracking-one">$</span>
+                            <span class="place-self-center text-[16px] text-[#BDBDBD] tracking-one">16.48</span>
+                            <span class="place-self-center text-[16px] text-[#23856D] tracking-one">6.48</span>
+                        </div>
+                        <div class="absolute top-[460px] flex items-center gap-[6px]">
+                            <img src="./public/svg/circle-1.svg" alt="Circle">
+                            <img src="./public/svg/circle-2.svg" alt="Circle">
+                            <img src="./public/svg/circle-3.svg" alt="Circle">
+                            <img src="./public/svg/circle-2.svg" alt="Circle">
+                        </div>
+                    </div>
+                    <div class="relative flex flex-col items-center gap-[15px] w-card-width h-card-height-1">
+                        <img class="absolute top-0 w-card-width h-card-height-2" src="./public/img/card-5.png"
+                            alt="Picture of the product">
+                        <span class="absolute top-[325px] text-[16px] tracking-one">Graphic Design</span>
+                        <p class="absolute top-[359px] text-[#737373]">English Department</p>
+                        <div class="absolute top-[398px] grid grid-cols-2 grid-rows-2 content-center gap-[5px]">
+                            <span class="place-self-center text-[16px] text-[#BDBDBD] tracking-one">$</span>
+                            <span class="place-self-center text-[16px] text-[#23856D] tracking-one">$</span>
+                            <span class="place-self-center text-[16px] text-[#BDBDBD] tracking-one">16.48</span>
+                            <span class="place-self-center text-[16px] text-[#23856D] tracking-one">6.48</span>
+                        </div>
+                        <div class="absolute top-[460px] flex items-center gap-[6px]">
+                            <img src="./public/svg/circle-1.svg" alt="Circle">
+                            <img src="./public/svg/circle-2.svg" alt="Circle">
+                            <img src="./public/svg/circle-3.svg" alt="Circle">
+                            <img src="./public/svg/circle-2.svg" alt="Circle">
+                        </div>
+                    </div>
+                    <div class="relative flex flex-col items-center gap-[15px] w-card-width h-card-height-1">
+                        <img class="absolute top-0 w-card-width h-card-height-2" src="./public/img/card-6.png"
+                            alt="Picture of the product">
+                        <span class="absolute top-[325px] text-[16px] tracking-one">Graphic Design</span>
+                        <p class="absolute top-[359px] text-[#737373]">English Department</p>
+                        <div class="absolute top-[398px] grid grid-cols-2 grid-rows-2 content-center gap-[5px]">
+                            <span class="place-self-center text-[16px] text-[#BDBDBD] tracking-one">$</span>
+                            <span class="place-self-center text-[16px] text-[#23856D] tracking-one">$</span>
+                            <span class="place-self-center text-[16px] text-[#BDBDBD] tracking-one">16.48</span>
+                            <span class="place-self-center text-[16px] text-[#23856D] tracking-one">6.48</span>
+                        </div>
+                        <div class="absolute top-[460px] flex items-center gap-[6px]">
+                            <img src="./public/svg/circle-1.svg" alt="Circle">
+                            <img src="./public/svg/circle-2.svg" alt="Circle">
+                            <img src="./public/svg/circle-3.svg" alt="Circle">
+                            <img src="./public/svg/circle-2.svg" alt="Circle">
+                        </div>
+                    </div>
+                    <div class="relative flex flex-col items-center gap-[15px] w-card-width h-card-height-1">
+                        <img class="absolute top-0 w-card-width h-card-height-2" src="./public/img/card-7.png"
+                            alt="Picture of the product">
+                        <span class="absolute top-[325px] text-[16px] tracking-one">Graphic Design</span>
+                        <p class="absolute top-[359px] text-[#737373]">English Department</p>
+                        <div class="absolute top-[398px] grid grid-cols-2 grid-rows-2 content-center gap-[5px]">
+                            <span class="place-self-center text-[16px] text-[#BDBDBD] tracking-one">$</span>
+                            <span class="place-self-center text-[16px] text-[#23856D] tracking-one">$</span>
+                            <span class="place-self-center text-[16px] text-[#BDBDBD] tracking-one">16.48</span>
+                            <span class="place-self-center text-[16px] text-[#23856D] tracking-one">6.48</span>
+                        </div>
+                        <div class="absolute top-[460px] flex items-center gap-[6px]">
+                            <img src="./public/svg/circle-1.svg" alt="Circle">
+                            <img src="./public/svg/circle-2.svg" alt="Circle">
+                            <img src="./public/svg/circle-3.svg" alt="Circle">
+                            <img src="./public/svg/circle-2.svg" alt="Circle">
+                        </div>
+                    </div>
+                    <div class="relative flex flex-col items-center gap-[15px] w-card-width h-card-height-1">
+                        <img class="absolute top-0 w-card-width h-card-height-2" src="./public/img/card-8.png"
+                            alt="Picture of the product">
+                        <span class="absolute top-[325px] text-[16px] tracking-one">Graphic Design</span>
+                        <p class="absolute top-[359px] text-[#737373]">English Department</p>
+                        <div class="absolute top-[398px] grid grid-cols-2 grid-rows-2 content-center gap-[5px]">
+                            <span class="place-self-center text-[16px] text-[#BDBDBD] tracking-one">$</span>
+                            <span class="place-self-center text-[16px] text-[#23856D] tracking-one">$</span>
+                            <span class="place-self-center text-[16px] text-[#BDBDBD] tracking-one">16.48</span>
+                            <span class="place-self-center text-[16px] text-[#23856D] tracking-one">6.48</span>
+                        </div>
+                        <div class="absolute top-[460px] flex items-center gap-[6px]">
+                            <img src="./public/svg/circle-1.svg" alt="Circle">
+                            <img src="./public/svg/circle-2.svg" alt="Circle">
+                            <img src="./public/svg/circle-3.svg" alt="Circle">
+                            <img src="./public/svg/circle-2.svg" alt="Circle">
+                        </div>
+                    </div>
+                    <div class="relative flex flex-col items-center gap-[15px] w-card-width h-card-height-1">
+                        <img class="absolute top-0 w-card-width h-card-height-2" src="./public/img/card-9.png"
+                            alt="Picture of the product">
+                        <span class="absolute top-[325px] text-[16px] tracking-one">Graphic Design</span>
+                        <p class="absolute top-[359px] text-[#737373]">English Department</p>
+                        <div class="absolute top-[398px] grid grid-cols-2 grid-rows-2 content-center gap-[5px]">
+                            <span class="place-self-center text-[16px] text-[#BDBDBD] tracking-one">$</span>
+                            <span class="place-self-center text-[16px] text-[#23856D] tracking-one">$</span>
+                            <span class="place-self-center text-[16px] text-[#BDBDBD] tracking-one">16.48</span>
+                            <span class="place-self-center text-[16px] text-[#23856D] tracking-one">6.48</span>
+                        </div>
+                        <div class="absolute top-[460px] flex items-center gap-[6px]">
+                            <img src="./public/svg/circle-1.svg" alt="Circle">
+                            <img src="./public/svg/circle-2.svg" alt="Circle">
+                            <img src="./public/svg/circle-3.svg" alt="Circle">
+                            <img src="./public/svg/circle-2.svg" alt="Circle">
+                        </div>
+                    </div>
+                    <div class="relative flex flex-col items-center gap-[15px] w-card-width h-card-height-1">
+                        <img class="absolute top-0 w-card-width h-card-height-2" src="./public/img/card-10.png"
+                            alt="Picture of the product">
+                        <span class="absolute top-[325px] text-[16px] tracking-one">Graphic Design</span>
+                        <p class="absolute top-[359px] text-[#737373]">English Department</p>
+                        <div class="absolute top-[398px] grid grid-cols-2 grid-rows-2 content-center gap-[5px]">
+                            <span class="place-self-center text-[16px] text-[#BDBDBD] tracking-one">$</span>
+                            <span class="place-self-center text-[16px] text-[#23856D] tracking-one">$</span>
+                            <span class="place-self-center text-[16px] text-[#BDBDBD] tracking-one">16.48</span>
+                            <span class="place-self-center text-[16px] text-[#23856D] tracking-one">6.48</span>
+                        </div>
+                        <div class="absolute top-[460px] flex items-center gap-[6px]">
+                            <img src="./public/svg/circle-1.svg" alt="Circle">
+                            <img src="./public/svg/circle-2.svg" alt="Circle">
+                            <img src="./public/svg/circle-3.svg" alt="Circle">
+                            <img src="./public/svg/circle-2.svg" alt="Circle">
+                        </div>
+                    </div>
+                    <div class="relative flex flex-col items-center gap-[15px] w-card-width h-card-height-1">
+                        <img class="absolute top-0 w-card-width h-card-height-2" src="./public/img/card-11.png"
+                            alt="Picture of the product">
+                        <span class="absolute top-[325px] text-[16px] tracking-one">Graphic Design</span>
+                        <p class="absolute top-[359px] text-[#737373]">English Department</p>
+                        <div class="absolute top-[398px] grid grid-cols-2 grid-rows-2 content-center gap-[5px]">
+                            <span class="place-self-center text-[16px] text-[#BDBDBD] tracking-one">$</span>
+                            <span class="place-self-center text-[16px] text-[#23856D] tracking-one">$</span>
+                            <span class="place-self-center text-[16px] text-[#BDBDBD] tracking-one">16.48</span>
+                            <span class="place-self-center text-[16px] text-[#23856D] tracking-one">6.48</span>
+                        </div>
+                        <div class="absolute top-[460px] flex items-center gap-[6px]">
+                            <img src="./public/svg/circle-1.svg" alt="Circle">
+                            <img src="./public/svg/circle-2.svg" alt="Circle">
+                            <img src="./public/svg/circle-3.svg" alt="Circle">
+                            <img src="./public/svg/circle-2.svg" alt="Circle">
+                        </div>
+                    </div>
+                    <div class="relative flex flex-col items-center gap-[15px] w-card-width h-card-height-1">
+                        <img class="absolute top-0 w-card-width h-card-height-2" src="./public/img/card-12.png"
+                            alt="Picture of the product">
+                        <span class="absolute top-[325px] text-[16px] tracking-one">Graphic Design</span>
+                        <p class="absolute top-[359px] text-[#737373]">English Department</p>
+                        <div class="absolute top-[398px] grid grid-cols-2 grid-rows-2 content-center gap-[5px]">
+                            <span class="place-self-center text-[16px] text-[#BDBDBD] tracking-one">$</span>
+                            <span class="place-self-center text-[16px] text-[#23856D] tracking-one">$</span>
+                            <span class="place-self-center text-[16px] text-[#BDBDBD] tracking-one">16.48</span>
+                            <span class="place-self-center text-[16px] text-[#23856D] tracking-one">6.48</span>
+                        </div>
+                        <div class="absolute top-[460px] flex items-center gap-[6px]">
+                            <img src="./public/svg/circle-1.svg" alt="Circle">
+                            <img src="./public/svg/circle-2.svg" alt="Circle">
+                            <img src="./public/svg/circle-3.svg" alt="Circle">
+                            <img src="./public/svg/circle-2.svg" alt="Circle">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <span
+                        class="bg-[#F3F3F3] p-[25px] border-[#BDBDBD] border-[1px] border-solid rounded-l-lg text-[#BDBDBD]">First</span>
+                    <span class="py-[25px] px-[20px] border-[#BDBDBD] border-[1px] border-solid text-[#23A6F0]">1</span>
+                    <span
+                        class="bg-[#23A6F0] py-[25px] px-[20px] border-[#23A6F0] border-[1px] border-solid text-[#FFFFFF]">2</span>
+                    <span class="py-[25px] px-[20px] border-[#BDBDBD] border-[1px] border-solid text-[#23A6F0]">3</span>
+                    <span
+                        class="p-[25px] border-[#BDBDBD] border-[1px] border-solid rounded-r-lg text-[#23A6F0]">Next</span>
+                </div>
+            </div>
+        </section>
+        <!-- Section 4 - Partners -->
+        <section class="h-[175px] bg-[#FAFAFA]">
+            <div class="container mx-auto">
+                <div class="h-[175px] flex items-center justify-evenly">
+                    <img class="max-md:w-[70px]" src="./public/img/fa-brands-1.png" alt="Logo of the Partner">
+                    <img class="max-md:w-[60px]" src="./public/img/fa-brands-2.png" alt="Logo of the Partner">
+                    <img class="max-md:w-[60px]" src="./public/img/fa-brands-3.png" alt="Logo of the Partner">
+                    <img class="max-md:w-[60px]" src="./public/img/fa-brands-4.png" alt="Logo of the Partner">
+                    <img class="max-md:w-[60px]" src="./public/img/fa-brands-5.png" alt="Logo of the Partner">
+                    <img class="max-md:w-[60px]" src="./public/img/fa-brands-6.png" alt="Logo of the Partner">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="text-[#737373] tracking-two">
+        <div class="container mx-auto">
+            <div class="h-[142px] flex items-center justify-between">
+                <span class="text-[24px] text-[#252B42] tracking-one">Bandage</span>
+                <div class="flex items-center gap-[22px]">
+                    <img src="./public/svg/facebook-blue.svg" alt="Logo of Facebook">
+                    <img src="./public/svg/instagram-blue.svg" alt="Logo of Instagram">
+                    <img src="./public/svg/twitter-blue.svg" alt="Logo of Twitter">
+                </div>
+            </div>
+            <hr>
+            <div class="h-[170px] my-[50px] flex justify-between max-md:h-[340px] max-md:grid max-md:grid max-md:grid-rows-2 max-md:grid-cols-3 max-md:gap-[15px]">
+                <ul class="flex flex-col gap-[10px]">
+                    <li class="text-[#252B42] font-[16px] tracking-one mb-[10px]"><a href="./index.html">Company
+                            Info</a></li>
+                    <li><a href="./index.html">About Us</a></li>
+                    <li><a href="./index.html">Carrier</a></li>
+                    <li><a href="./index.html">We are hiring</a></li>
+                    <li><a href="./index.html">Blog</a></li>
+                </ul>
+                <ul class="flex flex-col gap-[10px]">
+                    <li class="text-[#252B42] font-[16px] tracking-one mb-[10px]"><a href="./index.html">Legal</a></li>
+                    <li><a href="./index.html">About us</a></li>
+                    <li><a href="./index.html">Carrier</a></li>
+                    <li><a href="./index.html">We are hiring</a></li>
+                    <li><a href="./index.html">Blog</a></li>
+                </ul>
+                <ul class="flex flex-col gap-[10px]">
+                    <li class="text-[#252B42] font-[16px] tracking-one mb-[10px]"><a href="./index.html">Features</a>
+                    </li>
+                    <li><a href="./index.html">Business Marketing</a></li>
+                    <li><a href="./index.html">User Analytic</a></li>
+                    <li><a href="./index.html">Live Chat</a></li>
+                    <li><a href="./index.html">Unlimited Support</a></li>
+                </ul>
+                <ul class="flex flex-col gap-[10px]">
+                    <li class="text-[#252B42] font-[16px] tracking-one mb-[10px]"><a href="./index.html">Recourses</a>
+                    </li>
+                    <li><a href="./index.html">IOS & Android</a></li>
+                    <li><a href="./index.html">Watch a Demo</a></li>
+                    <li><a href="./index.html">Customers</a></li>
+                    <li><a href="./index.html">API</a></li>
+                </ul>
+                <div>
+                    <span class="text-[#252B42] font-[16px] tracking-one mb-[20px]">Get In Touch</span>
+                    <div class="relative w-[321px] h-[58px] max-md:w-[202px] rounded max-md:h-[42px]">
+                        <input
+                            class="placeholder:pl-[20px] text-normal text-[#737373] absolute w-[315px] h-[54px] bg-[#F9F9F9] border-[#E6E6E6] border-[1px] border-solid rounded max-md:w-[200px] rounded max-md:h-[40px] max-md:text-[10px]"
+                            type="email" placeholder="Your Email">
+                        <button
+                            class="absolute right-0 w-[117px] h-[54px] bg-[#23A6F0] border-[#E6E6E6] border-[1px] border-solid rounded-r-lg text-[#FFF] text-normal max-md:w-[50px] rounded max-md:h-[40px] max-md:text-[10px]">Subscribe</button>
+                    </div>
+                    <p class="mt-px text-normal text-[12px] text-[#737373]">Lore imp sum dolor Amit</p>
+                </div>
+            </div>
+        </div>
+        <div class="h-[74px] bg-[#FAFAFA]">
+            <div class="container mx-auto">
+                <p class="pt-[27px]">Made With Love By Finland All Right Reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
